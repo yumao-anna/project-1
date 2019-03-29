@@ -1,0 +1,40 @@
+i: Casual Description:
+UC-4:Logout: User quits personal account.
+UC-14:Cancel occupancy mark: Take out the courier, the data control center cancels the occupancy mark.
+
+ii: Parts of Use Case Diagram
+
+iii: Parts of Traceability Matrix
+
+iv: Fully-Dressed Description:
+
+Use Case UC-4:         Logout
+Related Requirements:   REQ-4 stated in table 1-2
+Initiating Actor:         Any of: senders and receivers
+Actor¡¯s goal:           Achieve the process of exiting the software 
+Participating Actors:     System, Database 
+Preconditions:          The system is working and the user has logged in.
+Postconditions:         None
+Flow of Events for Main Success Scenario:
+----->a.User clicks the ¡°MINE¡± button in the main interface.
+<-----b.System displays the personal center interface to the user.
+----->c.User clicks the ¡°log out¡± button.
+<-----d.System prompted the user to ensure to log out.
+----->e.User clinks ¡°Yes¡± to log out.
+<-----f.System stores the operate logs to database and shutdown. 
+
+Use Case UC-£¨14£© Cancel occupancy mark
+Related Requirements: REQ-6, REQ-9,REQ-12
+Initiating Actor: Any of :User, Software, 
+Actor¡¯s Goal: Restoration of cabinet usability
+Participating Actors: LockDevice, Timer, Memorizer, 
+Preconditions: The LockDevice and code verification device of the cabinet are natural.
+             User has been sent the pick-up code.
+Flow of Events for Main Success Scenario:
+include::Send pick-up code(UC-12), Scan pick-up code(UC-13), Cancel occupancy mark(UC-14)
+----->a:User opens the application and selects the menu item ¡±close the sale¡±.
+<-----b::system provide the pick-up code to user.
+c:the system access database to verify the account information----->
+<-----d:system cancel occupancy mark successful or not 
+e:system store the operation logs to database-----> 
+d. System Sequence Diagrams: UC-3, UC-12,UC-14
