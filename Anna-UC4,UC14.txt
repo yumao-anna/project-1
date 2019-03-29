@@ -2,9 +2,9 @@ i: Casual Description:
 UC-4:Logout: User quits personal account.
 UC-14:Cancel occupancy mark: Take out the courier, the data control center cancels the occupancy mark.
 
-ii: Parts of Use Case Diagram
+ii: Part of Use Case Diagram
 
-iii: Parts of Traceability Matrix
+iii: Part of Traceability Matrix
 
 iv: Fully-Dressed Description:
 
